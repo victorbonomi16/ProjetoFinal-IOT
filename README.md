@@ -107,10 +107,8 @@ Curso Técnico de Informática
 </details> 
 <br>
 
-&#x1F4D6;<i>"Não é a linguagem de programação que define o programador, mas sim sua lógica.<br> 
-by: David Ribeiro Guilherme"</i> 
-
-<p align = "center">
-<a href = "https://api.whatsapp.com/send?phone=5548996301654&text=Vinicius%20Damiani"><img src="Anuncio.gif" width="180" heigth="100">
+&#x1F4D6;<i>"15 anos a trás, a internet era uma maneira de fugir do mundo real, hoje o mundo real é uma maneira de fugir da internet.<br> 
+by: John"</i> 
+ 
 </p>
 </body></html>
