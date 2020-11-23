@@ -81,7 +81,7 @@ Curso Técnico de Informática
 <p align = "center">Nosso projeto tem por finalidade representar o cômodo de uma casa automatizado, utilizando alguns componentes encontrados no TinkerCad:
 <br>
 
-<img src="codfoto.jpg" width="300" heigth="100"></p>
+<img src="ProjetoFinal.png" width="300" heigth="100"></p>
 <br>
 
 <font face="Bahnschrift Condensed" size="5" color="#C1CDC1">
@@ -107,8 +107,8 @@ Curso Técnico de Informática
 </details> 
 <br>
 
-&#x1F4D6;<i>"15 anos a trás, a internet era uma maneira de fugir do mundo real, hoje o mundo real é uma maneira de fugir da internet.<br> 
-by: John"</i> 
+&#x1F4D6;<i>"15 anos a trás, a internet era uma maneira de fugir do mundo real, hoje o mundo real é uma maneira de fugir da internet".<br> 
+by: John </i> 
  
 </p>
 </body></html>
