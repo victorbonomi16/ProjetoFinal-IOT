@@ -1,0 +1,161 @@
+//Setor01-Ar-Condicionado Intêligente está sendo representado por três leds:
+//-Vermelho: modo desligado
+//-Verde: modo ligado
+//-Amarelo: modo refrigerando
+#include <Servo.h> 
+#define valvulaReversora A2 
+Servo servo1;
+#define pinoTemp A5 
+int valorAD, temp;
+const int motorVentilador=3;
+int motorVentiladorState=0;//Inicia 0
+const int motorCompressor=4;
+int motorCompressorState=0;
+int ledVermelho=2;
+
+//Setor02-Sensor presença
+#include <Adafruit_NeoPixel.h>
+#define LDR A4
+int sensorPir=0;
+const int ledTeste=6;
+
+//Setor03-Fechadura Digital
+#include <Keypad.h>
+//Servo
+#define motor A3
+Servo servo2;
+//Teclado
+char* senha = "123456";//Defina a senha aqui, ela deve conter seis dígitos
+const byte LINHAS = 3;//Quantidade de linhas do teclado
+const byte COLUNAS = 3;//Quantidade de colunas do teclado
+char digitos[LINHAS][COLUNAS] = {
+{'1','2','3'},
+{'4','5','6'},
+{'7','8','9'}};
+//Todos os caracteres do teclado
+                         //1  2  3
+byte pinosLinha[LINHAS] = {10,9,8};//Pinos de conexão das linhas no arduino
+byte pinosColuna[COLUNAS] = {7,11,12};//Pinos de conexão das colunas no arduino 
+Keypad keypad = Keypad( makeKeymap(digitos), pinosLinha, pinosColuna, LINHAS, COLUNAS );//Objeto de leitura das teclas com os parâmetros lidos
+int position = 0;
+#define ledPortaVermelho A1
+#define ledPortaVerde A0
+int tempoAberto = 1000;
+
+void setup(){
+  	//Setor01 Configuração dos pinos(leds)do Ar-Condicionado como saída
+      pinMode(ledVermelho,OUTPUT);
+      pinMode(motorVentilador,INPUT);
+      pinMode(motorCompressor,INPUT);
+      servo1.attach(valvulaReversora);//Configurando o servo motor
+      servo1.write(0);
+
+    //Setor02 Sensor Presença
+      pinMode(sensorPir,INPUT);
+      pinMode(ledTeste,OUTPUT);
+  
+    //Setor03 Fechadura Digital
+   //Teclado 
+      estadoPorta(true);//Diz se a porta está ou não trancada
+      pinMode(ledPortaVermelho,OUTPUT); 
+      pinMode(ledPortaVerde,OUTPUT);
+    //Servo
+      servo2.attach(motor);//Configurando o servo motor
+      servo2.write(93);//Iniciando o servo a 93 graus(mais perto do 90), representando a porta trancada
+      
+  Serial.begin(9600);
+}
+
+void loop(){
+  	//Setor01 Ar-condicionado
+    valorAD=analogRead(pinoTemp);
+    motorVentiladorState=analogRead(motorVentilador);  
+    motorCompressorState=analogRead(motorCompressor);
+    temp = map(valorAD, 20,358,0,40);//Colocamos uma variação de temperatura até onde o Ar-condicionado resolveria que seria 40°C.  
+           
+     digitalWrite(ledVermelho,HIGH);
+  //Ativa somente o ventilador, pois esta ventilando o ambient  
+  if(temp>=20 && temp<=24){
+      digitalWrite(motorCompressor,LOW);
+      digitalWrite(motorVentilador,HIGH);
+      digitalWrite(ledVermelho,LOW);
+   }  
+  else{
+      digitalWrite(motorVentilador,LOW);
+  }
+     //Ativa o compressor para Refrigerar 
+  if (temp>=25){
+       digitalWrite(motorCompressor,HIGH);
+       digitalWrite(motorVentilador,HIGH);
+       digitalWrite(ledVermelho,LOW);
+       servo1.write(90);
+       //Serial.println("Por conta da temperatura elevada, seu Ar-condicionado ligou. A temperatura do seu quarto e de: " + (String)temp);
+  }
+  if (temp<10){
+    servo1.write(0);
+    digitalWrite(motorVentilador,HIGH);
+    digitalWrite(ledVermelho,LOW);
+    delay(1000);
+    digitalWrite(motorCompressor,HIGH);   
+  }
+
+  Serial.println(temp);
+  
+    //Setor02 Iluminação noturna(Bide)
+  sensorPir=digitalRead(5);
+  int valorAD = analogRead(LDR);
+  if(sensorPir==HIGH && valorAD>800){
+     digitalWrite(ledTeste,HIGH);
+     delay(10000);
+     digitalWrite(ledTeste,LOW);
+
+  }
+  else{
+     digitalWrite(ledTeste,LOW);
+  }
+  
+
+  //Setor03 Fechadura Digital
+  
+  char digito = keypad.getKey();//Faz leitura das teclas
+if (digito !=0)
+{
+  if (digito == senha[position])//Verifica se a senha está correta
+{
+position ++;
+}
+else {//Retorna a leitura para a primeira posição de leitura da senha quando o dígito apertado não corresponde ao correto 
+position = 0;
+}
+if (position == 6)//Altera estado da porta 
+{
+estadoPorta(false);
+
+}
+delay(10);
+  }}
+
+void estadoPorta(int trancado)
+{
+  
+if (trancado)//Porta no estado: Trancada
+{
+digitalWrite(ledPortaVermelho, HIGH);
+digitalWrite(ledPortaVerde, LOW);
+}
+
+else//Porta no estado: Aberta
+{
+digitalWrite(ledPortaVermelho, LOW);
+digitalWrite(ledPortaVerde, HIGH);
+delay(30);
+digitalWrite(ledPortaVerde,HIGH); 
+delay(tempoAberto);
+position = 0;
+servo2.write(185);//Tranca a porta novamente
+estadoPorta(true);
+
+Serial.println(temp);
+delay(50);
+}}
+ 
