@@ -7,7 +7,7 @@
 <font face="Bahnschrift Condensed" size="7" color="#C1CDC1">
 <p align="center">
 Curso Técnico de Informática
-<hr size="4" width="1100" color="#0E0B16">
+<hr size="4" width="1000" color="#0E0B16">
 </p>
 </font>
 
