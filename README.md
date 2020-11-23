@@ -7,7 +7,7 @@
 <font face="Bahnschrift Condensed" size="7" color="#C1CDC1">
 <p align="center">
 Curso Técnico de Informática
-<hr size="4" width="1000" color="#0E0B16">
+<hr size="4" width="800" color="#0E0B16">
 </p>
 </font>
 
@@ -60,7 +60,7 @@ Curso Técnico de Informática
 </details> 
 <br>
  
-<hr size="4" width="1000" color="#0E0B16">
+<hr size="4" width="800" color="#0E0B16">
 
 <font face="Bahnschrift Condensed" size="8" color="#778899">
 <p align = "center">&#x1F3C3; Cômodo Inteligente &#x1F40D;	
