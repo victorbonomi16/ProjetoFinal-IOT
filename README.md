@@ -63,12 +63,17 @@ Curso Técnico de Informática
 </details> 
 <br>
  
-<hr size="4" width="450" color="#0E0B16">
+<hr size="4" width="1000" color="#0E0B16">
 
 <font face="Bahnschrift Condensed" size="8" color="#778899">
 <p align = "center">&#x1F3C3; Cômodo Inteligente &#x1F40D;	
 </p></font>
-<p align = "center">O trabalho é da disciplina de IOT e será realizado na plataforma do TinkerCad. Onde temos que apresentar um projeto que utilize alguns componentes solicitados, tendo possibilidade também de utilizar outros componentes que estão presentes no TinkerCad. Nesse projeto, realizaremos um cômodo de uma casa, totalmente inteligente.
+<p align = "center">O trabalho é da disciplina de IOT e será realizado na plataforma do TinkerCad. Onde temos que apresentar um projeto que utilize alguns componentes solicitados, tendo possibilidade também de utilizar outros componentes que estão presentes no TinkerCad. Nesse projeto, realizaremos um cômodo de uma casa, totalmente inteligente.</p>
+<br>
+<font face="Bahnschrift Condensed" size="8" color="#778899">
+<p align = "center">  O que seria o termo "Cômodo inteligente"?  	
+</p></font>
+<p align = "center">O conceito de casa inteligente chega ao mercado para dar mais comodidade, conforto e praticidade aos seus usuários. A casa inteligente é um sistema que funciona com vários dispositivos que são instalados e se conectam através da internet. Com este auxílio os moradores podem controlar todas as coisas da casa: iluminação, climatização, televisores e etc.
 <br>
 <img src="codfoto.jpg" width="300" heigth="100"></p>
 <br>
