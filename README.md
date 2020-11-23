@@ -75,6 +75,12 @@ Curso Técnico de Informática
 </p></font>
 <p align = "center">O conceito de casa inteligente chega ao mercado para dar mais comodidade, conforto e praticidade aos seus usuários. A casa inteligente é um sistema que funciona com vários dispositivos que são instalados e se conectam através da internet. Com este auxílio os moradores podem controlar todas as coisas da casa: iluminação, climatização, televisores e etc.
 <br>
+<font face="Bahnschrift Condensed" size="8" color="#778899">
+<p align = "center">  Sobre nosso Projeto	
+</p></font>
+<p align = "center">Nosso projeto tem por finalidade representar o cômodo de uma casa automatizado, utilizando alguns componentes encontrados no TinkerCad:
+<br>
+
 <img src="codfoto.jpg" width="300" heigth="100"></p>
 <br>
 
