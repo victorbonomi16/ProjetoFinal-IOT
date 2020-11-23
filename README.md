@@ -84,6 +84,29 @@ Curso Técnico de Informática
 <img src="codfoto.jpg" width="300" heigth="100"></p>
 <br>
 
+<font face="Bahnschrift Condensed" size="5" color="#C1CDC1">
+<p align="left">
+&#x1F920; Especificações. 
+</p></font>
+<details>
+<summary> <b>Componentes Utilizados... </b><i>(Aperta aí)</i> </summary>
+&#x1F4BB;1x Arduino UNO <br> 
+&#x1F4BB;1x Placa de ensaio<br>
+&#x1F4BB;2x Micro Servo <br>
+&#x1F4BB;1x Fotorresistor<br>
+&#x1F4BB;1x Teclado Matricial<br>
+&#x1F4BB;6x Resistores<br>
+&#x1F4BB;1x Sensor de temperatura TMP36<br>
+&#x1F4BB;1x Sensor PIR <br>
+&#x1F4BB;2x Motor CC<br>
+&#x1F4BB;3x Leds<br>
+&#x1F4BB;1x Interruptor DIP DPST<br>
+&#x1F4BB;1x Lâmpada<br>
+ 
+<br> 
+</details> 
+<br>
+
 &#x1F4D6;<i>"Não é a linguagem de programação que define o programador, mas sim sua lógica.<br> 
 by: David Ribeiro Guilherme"</i> 
 
