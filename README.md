@@ -27,10 +27,7 @@ Curso Técnico de Informática
 &#x1F4F2;Me siga no instagram!
  <p align="left">
  <a href="https://www.instagram.com/vinidamiani_/?hl=pt-br"> <img src="insta.png" width="40" heigth="40"> </a> </p>
-
-&#x1F680;Veja meu desempenho:
- ![ViniciusDamiani's github stats](https://github-readme-stats.vercel.app/api?username=ViniciusDamiani&show_icons=true&theme=radical)  
-
+ 
 </details> 
 <br>
 
