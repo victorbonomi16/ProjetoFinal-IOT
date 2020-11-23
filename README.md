@@ -68,7 +68,7 @@ Curso Técnico de Informática
 <font face="Bahnschrift Condensed" size="5" color="#778899">
 <p align = "center">&#x1F3C3; Cômodo Inteligente &#x1F40D;	
 </p></font>
-<p align = "center">Python é uma linguagem de programação de alto nível, interpretada, de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte.
+<p align = "center">O trabalho é da disciplina de IOT e será realizado na plataforma do TinkerCad. Onde temos que apresentar um projeto que utilize alguns componentes solicitados, tendo possibilidade também de utilizar outros componentes que estão presentes no TinkerCad. Nesse projeto, realizaremos um cômodo de uma casa, totalmente inteligente.
 <br>
 <img src="codfoto.jpg" width="300" heigth="100"></p>
 <br>
