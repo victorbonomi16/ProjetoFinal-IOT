@@ -65,7 +65,7 @@ Curso Técnico de Informática
  
 <hr size="4" width="450" color="#0E0B16">
 
-<font face="Bahnschrift Condensed" size="5" color="#778899">
+<font face="Bahnschrift Condensed" size="8" color="#778899">
 <p align = "center">&#x1F3C3; Cômodo Inteligente &#x1F40D;	
 </p></font>
 <p align = "center">O trabalho é da disciplina de IOT e será realizado na plataforma do TinkerCad. Onde temos que apresentar um projeto que utilize alguns componentes solicitados, tendo possibilidade também de utilizar outros componentes que estão presentes no TinkerCad. Nesse projeto, realizaremos um cômodo de uma casa, totalmente inteligente.
