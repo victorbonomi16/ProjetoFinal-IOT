@@ -81,7 +81,7 @@ Curso Técnico de Informática
 <p align = "center">Nosso projeto tem por finalidade representar o cômodo de uma casa automatizado, utilizando alguns componentes encontrados no TinkerCad:
 <br>
 <p align = "center">
-<img src="ProjetoFinal.png" width="500" heigth="300"></p>
+<img src="ProjetoFinal.png" width="600" heigth="400"></p>
 <br>
 
 <font face="Bahnschrift Condensed" size="5" color="#C1CDC1">
