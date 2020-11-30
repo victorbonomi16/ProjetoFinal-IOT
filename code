@@ -155,7 +155,17 @@ position = 0;
 servo2.write(185);//Tranca a porta novamente
 estadoPorta(true);
 
-Serial.println(temp);
+//Fechando a porta
+delay(5000);
+digitalWrite(ledPortaVerde,HIGH); 
+delay(300);
+digitalWrite(ledPortaVerde,LOW);
+delay(300);
+digitalWrite(ledPortaVerde,HIGH); 
+delay(300);
+digitalWrite(ledPortaVerde,LOW); 
+servo2.write(93);
+ 
 delay(50);
 }}
  
