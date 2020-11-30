@@ -103,6 +103,14 @@ Curso Técnico de Informática
 <br> 
 </details> 
 <br>
+<font face="Bahnschrift Condensed" size="5" color="#C1CDC1">
+&#x1F4BB; Links Relacionados
+</font>
+<details>
+<summary> <b><i>(Aperta aí)</i> </b> </summary>
+&#x2705;<a href="https://github.com/victorbonomi16/ProjetoFinal-IOT/blob/main/code">Código</a><br>
+ 
+</details> 
 
 &#x1F4D6;<i>"15 anos a trás, a internet era uma maneira de fugir do mundo real, hoje o mundo real é uma maneira de fugir da internet".<br> 
 by: John </i> 
